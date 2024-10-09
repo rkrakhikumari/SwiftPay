@@ -1,0 +1,117 @@
+body,
+h1,
+h2,
+h3,
+p,
+table,
+th,
+td,
+a,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8; /* Light background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+  background: #ffffff; /* White background for the container */
+  padding: 40px 30px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 500px; /* Fixed width for the dashboard */
+}
+
+h2 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #333; /* Dark text color */
+}
+
+h3 {
+  margin-top: 20px; /* Space above the heading */
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%; /* Full width for input fields */
+  padding: 10px; /* Padding for input fields */
+  margin-bottom: 15px; /* Space below input fields */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners for input fields */
+}
+
+input[type="submit"].btn {
+  width: 100%; /* Full width for transfer button */
+  padding: 10px; /* Padding for the button */
+  background-color: #4caf50; /* Green background for transfer button */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+input[type="submit"].btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.buttons {
+  display: flex; /* Use flexbox for button layout */
+  justify-content: center; /* Center the buttons */
+  margin-top: 20px; /* Space above the buttons */
+}
+
+button {
+  flex: 1; /* Allow buttons to grow equally */
+  padding: 10px; /* Padding for the button */
+  background-color: #4caf50; /* Green background for buttons */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  font-size: 16px; /* Font size for button text */
+  margin: 0 5px; /* Margin between buttons */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+.flash-messages {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.flash-message {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style for success messages */
+.flash-message.success {
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+}
+
+/* Style for error messages */
+.flash-message.error {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+}
+
+/* Optional: Style for general info messages */
+.flash-message.info {
+    background-color: #2196f3; /* Blue background */
+    color: white; /* White text */
+}

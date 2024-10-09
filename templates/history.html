@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction History</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='history.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Transaction History</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Serial No.</th>
+            <th>Transaction Type</th>
+            <th>User</th>
+            <th>Amount</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for transaction in all_transactions %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <!-- Serial number -->
+            <td>{{ transaction.transaction_type }}</td>
+            <td>{{ transaction.user }}</td>
+            <td>{{ transaction.amount }}</td>
+            <td>{{ transaction.date }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <div class="links">
+        <a href="{{ url_for('dashboard') }}" class="btn">Back to Dashboard</a>
+        <!-- Back to Dashboard button -->
+      </div>
+    </div>
+  </body>
+</html>

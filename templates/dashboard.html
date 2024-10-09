@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='dashboard.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Welcome, {{ username }}!</h2>
+      <p>Your current balance: <strong>₹{{ balance }}</strong></p>
+
+      <h3>Transfer Funds</h3>
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %}
+      <div class="flash-messages">
+        {% for category, message in messages %}
+        <div class="flash-message {{ category }}">{{ message }}</div>
+        {% endfor %}
+      </div>
+      {% endif %} {% endwith %}
+
+      <form method="POST" action="/transfer">
+        <input type="hidden" name="sender" value="{{ username }}" />
+        <label for="receiver">Receiver's Username:</label>
+        <input type="text" id="receiver" name="receiver" required />
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required />
+
+        <input type="submit" value="Transfer" class="btn" />
+      </form>
+
+      <div class="buttons">
+        <form
+          action="{{ url_for('history') }}"
+          method="GET"
+          style="display: inline"
+        >
+          <button type="submit" class="button">View Transaction History</button>
+        </form>
+        <form action="/" method="GET" style="display: inline">
+          <button type="submit" class="button">Logout</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      // Set timeout to remove flash messages after 2 seconds (2000 milliseconds)
+      setTimeout(function () {
+        var flashMessages = document.querySelector(".flash-messages");
+        if (flashMessages) {
+          flashMessages.style.transition = "opacity 0.5s ease-out";
+          flashMessages.style.opacity = 0;
+          setTimeout(function () {
+            flashMessages.remove();
+          }, 500); // Wait for the fade-out transition to finish before removing the element
+        }
+      }, 2000); // 2000 milliseconds = 2 seconds
+    </script>
+  </body>
+</html>

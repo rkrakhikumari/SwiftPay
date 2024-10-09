@@ -1,0 +1,94 @@
+body,
+    h1,
+    table,
+    th,
+    td,
+    a,
+    button {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8; /* Light background color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full height of the viewport */
+    }
+
+    .container {
+      background: #ffffff; /* White background for the container */
+      padding: 40px 30px; /* Padding around the content */
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      width: 500px; /* Fixed width for the transaction history */
+    }
+
+    h1 {
+      text-align: center; /* Center the heading */
+      margin-bottom: 20px; /* Space below the heading */
+      color: #333; /* Dark text color */
+    }
+
+    table {
+      width: 100%; /* Full width for the table */
+      border-collapse: collapse; /* Merge borders */
+      margin-bottom: 20px; /* Space below the table */
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc; /* Light gray border */
+      padding: 10px; /* Padding inside cells */
+      text-align: left; /* Left-align text in cells */
+    }
+
+    th {
+      background-color: #4caf50; /* Green background for header */
+      color: white; /* White text color for header */
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9; /* Light gray background for even rows */
+    }
+
+    tbody tr:hover {
+      background-color: #e0f7fa; /* Light blue background on row hover */
+    }
+
+    .button {
+      display: block; /* Block display for the button */
+      width: 100%; /* Full width button */
+      padding: 10px; /* Padding for the button */
+      background-color: #4caf50; /* Green background for button */
+      color: white; /* White text color */
+      border: none; /* No border */
+      border-radius: 5px; /* Rounded corners */
+      font-size: 16px; /* Font size for button text */
+      cursor: pointer; /* Pointer cursor on hover */
+      transition: background-color 0.3s; /* Smooth transition for hover effect */
+      text-align: center; /* Center the button text */
+      margin-top: 20px; /* Space above the button */
+    }
+
+    .button:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #4caf50; /* Green background */
+        color: white; /* White text */
+        text-align: center;
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* No underline */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    
+    .btn:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+    

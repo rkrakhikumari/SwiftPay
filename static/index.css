@@ -1,0 +1,49 @@
+body,
+    h1,
+    a {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8; /* Light background color */
+      color: #333; /* Dark text color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full height of the viewport */
+    }
+
+    .container {
+      text-align: center;
+      background: #ffffff; /* White background for the content area */
+      padding: 40px 20px; /* Padding around the content */
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+
+    h1 {
+      font-size: 2.5em; /* Larger heading font size */
+      margin-bottom: 20px; /* Space below the heading */
+    }
+
+    .nav-links {
+      margin-top: 20px; /* Space above navigation links */
+    }
+
+    .btn {
+      display: inline-block; /* Inline block for buttons */
+      padding: 10px 20px; /* Padding for buttons */
+      margin: 10px; /* Space between buttons */
+      font-size: 1.2em; /* Larger font size for buttons */
+      text-decoration: none; /* Remove underline from links */
+      color: white; /* White text color */
+      background-color: #4caf50; /* Green background color */
+      border-radius: 5px; /* Rounded corners for buttons */
+      transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    .btn:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }

@@ -1,0 +1,107 @@
+body,
+    h1,
+    label,
+    input {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8; /* Light background color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full height of the viewport */
+    }
+
+    .container {
+      background: #ffffff; /* White background for the container */
+      padding: 40px 30px; /* Padding around the content */
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      width: 400px; /* Fixed width for the transfer form */
+    }
+
+    h1 {
+      text-align: center; /* Center the heading */
+      margin-bottom: 20px; /* Space below the heading */
+      color: #333; /* Dark text color */
+    }
+
+    .messages {
+      list-style-type: none; /* Remove default list styling */
+      padding: 0; /* Remove padding */
+      margin-bottom: 20px; /* Space below the messages */
+      background-color: #e8f0fe; /* Light background for messages */
+      border-left: 5px solid #2196f3; /* Blue left border */
+      padding: 10px; /* Padding inside the message box */
+    }
+
+    .messages li {
+      color: #333; /* Dark text color for messages */
+      margin: 5px 0; /* Space between messages */
+    }
+
+    label {
+      display: block; /* Block display for labels */
+      margin-bottom: 5px; /* Space below labels */
+      font-weight: bold; /* Bold labels */
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%; /* Full width input fields */
+      padding: 10px; /* Padding for input fields */
+      margin-bottom: 20px; /* Space below input fields */
+      border: 1px solid #ccc; /* Light gray border */
+      border-radius: 5px; /* Rounded corners */
+      font-size: 16px; /* Font size for input text */
+    }
+
+    button {
+      width: 100%; /* Full width button */
+      padding: 10px; /* Padding for button */
+      background-color: #4caf50; /* Green background for button */
+      color: white; /* White text color */
+      border: none; /* No border */
+      border-radius: 5px; /* Rounded corners */
+      font-size: 16px; /* Font size for button text */
+      cursor: pointer; /* Pointer cursor on hover */
+      transition: background-color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    button:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+
+    .link {
+      display: block; /* Block display for the link */
+      text-align: center; /* Center the link */
+      margin-top: 20px; /* Space above the link */
+      text-decoration: none; /* Remove underline from the link */
+      color: #4caf50; /* Green text color */
+      transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .link:hover {
+      color: #45a049; /* Darker green on hover */
+    }
+
+    .button {
+        display: inline-block; /* Aligns the button properly */
+        margin-top: 20px; /* Adds space above the button */
+        padding: 10px 15px; /* Padding for the button */
+        background-color: #45a049; /* Blue background */
+        color: white; /* White text color */
+        border: none; /* No border */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline from link */
+        font-size: 16px; /* Font size */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    
+    .button:hover {
+        background-color: #45a049; /* Darker blue on hover */
+    }
+    

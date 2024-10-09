@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='login.css') }}"
+    />
+    <script>
+      // JavaScript to remove flash messages after 2 seconds
+      window.onload = function () {
+        setTimeout(function () {
+          const flashMessages = document.getElementById("flash-messages");
+          if (flashMessages) {
+            flashMessages.style.display = "none"; // Hide the flash messages
+          }
+        }, 2000); // 2000 milliseconds = 2 seconds
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+
+      <div id="flash-messages">
+        {% with messages = get_flashed_messages(with_categories=True) %} {% if
+        messages %}
+        <ul>
+          {% for category, message in messages %}
+          <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %} {% endwith %}
+      </div>
+
+      <form method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required />
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p>
+        Not registered? <a href="{{ url_for('register') }}">Register here</a>
+      </p>
+    </div>
+  </body>
+</html>

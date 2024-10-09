@@ -1,0 +1,106 @@
+body,
+h2,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8; /* Light background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+  background: #ffffff; /* White background for the form container */
+  padding: 40px 30px; /* Padding around the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 300px; /* Fixed width for the form */
+}
+
+h2 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #333; /* Dark text color */
+}
+
+label {
+  display: block; /* Block display for labels */
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Full width input fields */
+  padding: 10px; /* Padding for input fields */
+  margin-bottom: 20px; /* Space below input fields */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size for input text */
+}
+
+button {
+  width: 100%; /* Full width button */
+  padding: 10px; /* Padding for button */
+  background-color: #4caf50; /* Green background for button */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size for button text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Flash message styling */
+.flash-message {
+  background-color: #f8d7da; /* Light red background for error messages */
+  color: #721c24; /* Dark red text for error messages */
+  padding: 10px; /* Padding for flash messages */
+  margin-bottom: 20px; /* Space below the message */
+  border: 1px solid #f5c6cb; /* Border for the message box */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center the message */
+}
+
+.flash-message ul {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove padding from the list */
+  margin: 0; /* Remove margin from the list */
+}
+
+.flash-message li {
+  margin: 0; /* No margin between list items */
+}
+
+.error {
+    color: red; /* Color for error messages */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.success {
+    color: blue; /* Color for success messages */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.error {
+    color: red; /* Color for error messages */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.success {
+    color: blue; /* Color for success messages */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+#flash-messages {
+    transition: opacity 0.5s ease; /* Optional: smooth transition */
+}
